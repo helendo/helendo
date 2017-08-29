@@ -1,0 +1,230 @@
+/* ---------------------------
+    NONE PADDING - MARGIN
+--------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+}
+/* ROOT CSS
+--------------------------- */
+html {
+    margin: 0;
+    padding: 0;
+}
+/* Global CSS
+--------------------------- */
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.content-wrap {
+    margin: 0 auto;
+    max-width: 940px;
+    margin: 0 auto;
+    overflow: hidden;
+
+    /*border: 1px solid grey;
+    border-radius: 12px;*/
+}
+
+/* Download button */
+.btn {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 50px;
+    display: inline-block;
+    border: 1px solid white;
+    color: white;
+    font-weight: 300;
+    font-size: 0.8em;
+}
+.btn:hover {
+    background: white;
+    color: rgb(255,104,104);
+    border: 1px solid rgb(255,104,104);
+}
+.animate-opacity {
+    opacity: 0.5;
+}
+/* Header
+--------------------------- */
+header {
+    /*background: rgb(121,88,159);*/
+    background-image: url("../images/1200px_800px.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position: relative;
+    padding-top: 5em;
+}
+header h1, h2 {
+    text-align: center;
+}
+header h1 {
+    text-transform: uppercase;
+    color: white;
+    font-size: 5em;
+}
+header h2 {
+    color: rgb(135,149,159);
+    font-weight: lighter;
+    padding-bottom: 5em;
+}
+.download {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+/* Navigation
+--------------------------- */
+nav {
+    text-align: center;  /* Code runs error */
+    background: white;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    top: 0;
+}
+nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 15px 5em;
+    display: inline-block; /* TO-DO */
+    color: rgb(121,88,159);
+}
+nav a:hover {
+    color: rgb(255,145,1)
+}
+/* Main Content
+--------------------------- */
+.work h3, .education h3, .skills  {
+    text-align: center;
+}
+.school {
+    background: rgb(237,239,245);
+}
+.col-wide-3:nth-child(odd) {
+    background: rgb(187,200,221);
+}
+.col-wide-3:nth-child(even) {
+    background: rgb(237,239,245);
+}
+/* Footer
+--------------------------- */
+footer {
+    text-align: center;
+}
+footer h3 {
+    padding: 35px 50px;
+}
+footer p {
+    padding-top: 2em;
+}
+.contact-info a {
+    text-decoration: none;
+    font-size: 2em;
+    color: rgb(0,161,213);
+    padding: 150px 50px;
+}
+.contact-info a:hover {
+    color: rgb(255,145,1);
+}
+
+/* Responsive Screen for big screens
+--------------------------------- */
+@media (min-width: 1036px) {
+    /* General styles for desktop and laptop */
+    header h1 {
+        padding: 10%;
+    }
+    h3 {
+        font-size: 2.4em;
+        text-transform: uppercase;
+        font-weight: 800;
+        padding: 1.8em 0;
+    }
+    h4 {
+        font-weight: 700;
+    }
+    /* 940 grid responsive */
+    .col-wide-3 {
+        width: 220px;
+        margin: 0;
+        float: left;
+        font-size: 0.8em;
+    }
+    /* Work Experience */
+    .job_1, .job_2, .job_3 {
+        padding: 0 46.666667px;
+    }
+    /* Education */
+    .school {
+        padding: 2em;
+    }
+    .school h4 {
+        font-size: 1.5em;
+    }
+    .school h5 {
+        font-size: 0.8em;
+    }
+    .school span {
+        font-weight: 200;
+        font-size: 1.4em;
+    }
+    .school i {
+        font-weight: 200;
+    }
+    /* Skills */
+    .skills .col-wide-3 {
+        padding: 50px 46.666667px;
+    }
+}
+/* Tablet Screen
+--------------------------- */
+@media (max-width: 1035px) {
+    .col-wide-3 {
+        width: 100%;
+    }
+    nav a {
+        padding: 15px 3em;
+        font-size: 0.8em;
+    }
+    .col-wide-3 {
+        padding: 20% 2%;
+    }
+}
+/* Mobile Screen
+--------------------------- */
+@media (max-width: 630px) {
+    .col-wide-3 {
+        width: 100%;
+    }
+    h3 {
+        font-size: 1.5em;
+        margin-left: 0.5em;
+    }
+    nav a {
+        padding: 15px 2em;
+        font-size: 0.5em;
+    }
+
+    header h1 {
+        text-transform: uppercase;
+        color: white;
+        font-size: 3em;
+    }
+    header h2 {
+        color: rgb(135,149,159);
+        font-weight: lighter;
+        padding-bottom: 5em;
+        font-size: 1em;
+    }
+
+    /* Download button */
+    .btn {
+        padding: 10px 30px;
+        font-weight: 300;
+        font-size: 0.5em;
+    }
+}

@@ -1,0 +1,387 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/* ------------------------------
+GLOBAL CSS
+------------------------------ */
+body {
+    /* General CSS */
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+img, svg {
+    vertical-align: middle;
+}
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+.float {
+  -webkit-transition:all .3s ease-out;
+  -moz-transition:all .3s ease-out;
+  -ms-transition:all .3s ease-out;
+  -o-transition:all .3s ease-out;
+  transition:all .3s ease-out;
+}
+
+.float:hover {
+  -webkit-transform:translate(0px,-10px);
+  -moz-transform:translate(0px,-10px);
+  -ms-transform:translate(0px,-10px);
+  -o-transform:translate(0px,-10px);
+  transform:translate(0px,-10px);
+}
+/* The slow way */
+.shadow {
+  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+}
+/* Transition to a bigger shadow on hover */
+.shadow:hover {
+    box-shadow: 0 15px 50px rgba(0,0,0,0.3);
+}
+/* -----------------------------
+HEADER
+----------------------------- */
+header {
+    /* General CSS */
+    background-color: rgb(240,219,79);
+    overflow: hidden;
+    /* Transition */
+    -webkit-transition: height 0.3s;
+    -moz-transition: height 0.3s;
+    -ms-transition: height 0.3s;
+    -o-transition: height 0.3s;
+    transition: height 0.3s;
+    /* Dimensions */
+    width: 100%;
+    height: 150px;
+    /* Position */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+/* Contact Info - HEADER
+--------------------------- */
+header .contact-info {
+    margin-left: 1%;
+    padding: 0;
+    width: 19%;
+    /* Position */
+    float: left;
+}
+header .contact-info a {
+    margin: 0;
+    padding: 0;
+    /* General CSS */
+    line-height: 150px;
+    color: rgb(96,94,94);
+    font-size: 2em;
+    /* Transition */
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+header .contact-info a:not(:last-child) {
+    margin: 0;
+    padding-right: 10px;
+}
+header .contact-info a:hover {
+    color: rgb(237,239,245);
+}
+/* Navigation - HEADER MENU
+--------------------------- */
+header nav {
+    margin: 0 auto;
+    padding: 0;
+    width: 80%;
+    /* Position */
+    float: right;
+}
+header nav a {
+    margin-left: 20px;
+    /* General CSS */
+    line-height: 150px;
+    color: #fff;
+    font-weight: 300;
+    font-size: 2em;
+    /* Transition */
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+header nav a:hover {
+    color: rgb(96,94,94);
+}
+/* Scroll Screen */
+header.smaller {
+    height: 75px;
+}
+header.smaller .contact-info a {
+    line-height: 75px;
+    font-size: 22px;
+}
+header.smaller nav a {
+    line-height: 75px;
+    font-size: 22px;
+}
+/*    MOBILE & TABLET SCREENS
+-------------------------------- */
+@media all and (max-width: 660px) {
+
+    header .contact-info {
+        margin: 0 auto;
+        width: 100%;
+        height: 100px;
+        /* General CSS */
+        text-align: center;
+        /* Position */
+        display: block;
+        float: none;
+    }
+    header .contact-info a {
+        line-height: 100px;
+    }
+    header nav {
+        margin: 0 auto;
+        width: 100%;
+        height: 50px;
+        /* Position */
+        display: block;
+        float: none;
+    }
+    header nav a {
+        margin: 0 10px;
+        line-height: 50px;
+        font-size: 1em;
+    }
+    /* Scroll Screen */
+    header.smaller .contact-info {
+        height: 40px;
+    }
+    header.smaller .contact-info a {
+        line-height: 40px;
+    }
+    header.smaller nav {
+        height: 35px;
+    }
+    header.smaller nav a {
+        line-height: 35px;
+    }
+}
+/* -------------------------------
+MAIN CONTENT
+------------------------------- */
+main {
+    margin: 0;
+    padding-top: 130px;
+    /* General CSS */
+    background: rgb(156,212,222);
+}
+/* Section Intro w/ sb-card
+------------------------------- */
+section.intro {
+    margin: 0;
+    padding: 160px 0;
+
+
+    /* Position */
+    position: relative;
+}
+section.intro .sb-card {
+    margin: 0 auto;
+    padding: 40px;
+    width: 40%;
+    /* General CSS */
+    background: #fff;
+    border-radius: 10px;
+    /* Position */
+    position: relative;
+}
+section.intro .sb-card img {
+    margin: 0;
+    padding: 0;
+    width: 76px;
+    height: 76px;
+    /* General CSS */
+    border-radius: 50%;
+    border: 6px solid #fff;
+    /* Position */
+    position: absolute;
+    left: 50%;
+    top: -2em; /* Half Circle */
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+section.intro .sb-card .sb-emblem-content {
+    margin: 0;
+    padding-top: 20px;
+    /* General CSS */
+    background: #fff;
+    text-align: center;
+    color: rgb(49,62,57);
+    line-height: 1.5;
+}
+section.intro .sb-card .sb-emblem-content h2 {
+    /* General CSS */
+    font-weight: 300;
+    font-size: 2.4em;
+}
+/* -------------------------------------------
+SECTION TABBED CONTENTS
+------------------------------------------- */
+section.tabbed-contents {
+    margin: 0;
+    padding: 0;
+}
+section.tabbed-contents .container {
+    /* General CSS */
+    font-size: 0;
+}
+/*                   Tabs
+------------------------------------------- */
+section.tabbed-contents .container ul.tabs {
+    /* General CSS */
+    background: #fff;
+}
+section.tabbed-contents .container ul.tabs li {
+    padding: 10px 18px;
+    /* General CSS */
+    color: #222;
+    cursor: pointer;
+    font-size: 16px;
+    /* Position */
+    display: inline-block;
+}
+section.tabbed-contents .container ul.tabs li.current {
+    /* General CSS */
+    background: linear-gradient(270deg, #2eecbb, #2e9fec, #dfd441);
+    background-size: 600% 600%;
+    -webkit-animation: AnimationName 14s ease infinite;
+    -moz-animation: AnimationName 14s ease infinite;
+    animation: AnimationName 14s ease infinite;
+    color: #222;
+}
+/*                 Tab Contents
+---------------------------------------------- */
+section.tabbed-contents .container .tab-content {
+    /* General CSS */
+    background: rgb(198,232,223);
+    /* Position */
+    display: none;
+}
+section.tabbed-contents .container .tab-content.current {
+    width: 100%;
+    /* General CSS */
+    background: linear-gradient(270deg, #2eecbb, #2e9fec, #dfd441);
+    background-size: 600% 600%;
+    -webkit-animation: AnimationName 14s ease infinite;
+    -moz-animation: AnimationName 14s ease infinite;
+    animation: AnimationName 14s ease infinite;
+    /* Position */
+    display: inherit;
+}
+div.sub-tab-content {
+    margin-top: 2em;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 30px;
+    width: 22.333%;
+    /* General CSS */
+    font-size: 16px;
+    /* General CSS */
+    background: #fff;
+    /* Position */
+    display: inline-block;
+}
+div.sub-tab-content:nth-child(4n-3) {
+    margin-left: 30px;
+}
+section.tabbed-contents .container .tab-content img {
+    width: 100%;
+    height: auto;
+}
+span.span-category a {
+    /* General CSS */
+    color: rgb(86,105,119);
+}
+h2.span-title a {
+    /* General CSS */
+    font-weight: 700;
+    font-size: 16px;
+    color: rgb(49,62,57);
+}
+/* -------------------------------------------
+FOOTER
+------------------------------------------- */
+footer {
+    /* General CSS */
+    background: rgb(26,43,59);
+    /* Dirty trick to remove whitespace between divs */
+    font-size: 0;
+}
+div.f-card {
+    width: 25%;
+    /* General CSS */
+    font-size: 16px;
+    color: rgb(137,158,174);
+    line-height: 1.5;
+    /* Position */
+    display: inline-block;
+}
+h2.footer-title {
+    margin-bottom: 18px;
+    margin-top: 30px;
+    /* General CSS */
+    font-weight: 300;
+    text-align: center;
+    color: rgb(137,158,174);
+}
+div.f-card ul li, p.f-self-intro {
+    padding: 0 30px;
+    /* General CSS */
+    font-weight: 100;
+    font-size: 14px;
+}
+div.f-card ul li a {
+    color: rgb(137,158,174);
+    cursor: pointer;
+}
+div.f-card ul li:last-child {
+    padding-bottom: 30px;
+}
+div.f-card-intro {
+    position: absolute;
+}
+p.f-copyright {
+    padding: 16px 30px;
+    /* General CSS */
+    font-weight: 100;
+    font-size: 14px;
+    background: #fff;
+}

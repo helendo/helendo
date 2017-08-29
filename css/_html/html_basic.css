@@ -1,0 +1,43 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+/* Global CSS
+--------------------------- */
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.meta, .header {
+    padding: 25px;
+}
+/* Section 1
+--------------------------- */
+.htmlbasic, .htmlbasic_2 {
+    background: rgb(237,239,245);
+    width: 640px;
+    padding: 75px;
+    margin: 5em auto;
+}
+/* Section 2
+--------------------------- */
+
+/* Footer
+--------------------------- */
+footer {
+    text-align: center;
+    margin-top: 5em;
+}
+footer a {
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 10px 25px;
+    text-decoration: none;
+    color: black;
+     text-transform: uppercase;
+}
+footer a:hover {
+    background: black;
+    color: white;
+}

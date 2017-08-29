@@ -1,0 +1,190 @@
+/* All CSS
+--------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+}
+/* Root CSS
+--------------------------- */
+html {
+    margin: 0;
+    padding: 0;
+}
+/* Global CSS
+--------------------------- */
+body {
+    font-family: 'Dosis', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+a {
+    text-decoration: none;
+}
+.meta {
+    padding: 25px;
+}
+.inner {
+    /*border: 1px solid black;*/
+}
+/* Header CSS
+--------------------------- */
+header {
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    width: 940px;
+    text-align: center;
+}
+header h1 {
+    margin: 0 auto;
+    padding: 0;
+    text-transform: uppercase;
+    font-weight: 100;
+    border-bottom: 1px solid black;
+    width: 220px;
+    font-weight: bold;
+}
+header h2 {
+    font-weight: 200;
+    font-size: 1.2em;
+}
+header img {
+    width: 80px;
+}
+/* Navigation CSS
+--------------------------- */
+nav {
+    margin: 0 auto;
+    margin-top: 1em;
+    padding: 0;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    overflow: hidden;
+
+    /* Center float left elements */
+    display: -webkit-flex; /* Safari */
+    display:flex; /* Display elements Horizontally */
+    justify-content:center;
+}
+nav a {
+    margin: 0;
+    padding: 14px 54px;
+    color: black;
+    text-transform: uppercase;
+    float: left;
+}
+nav a:hover {
+    color: rgb(255,177,62);
+}
+/* Dropdown menu for collections */
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+.dropdown .dropbtn {
+    margin: 0;
+    padding: 14px 46px;
+    border: none;
+    font-size: 1em;
+    outline: none;
+    color: black;
+    background-color: inherit;
+    font-family: 'Dosis', sans-serif;
+    text-transform: uppercase;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+.dropdown-content a {
+    float: none;
+    display: block;
+
+    /* Justify main nav a and .dropdown-content a */
+    text-align: left;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/* Main
+--------------------------- */
+main {
+    margin: 20em auto;
+    padding: 0;
+    width: 940px;
+}
+main a {
+    background: rgb(98,200,203);
+    border-radius: 25px;
+    margin: 1em auto;
+    padding: 10px 15px;
+    color: white;
+    display: block;
+    width: 8em;
+}
+main a:hover {
+    background: rgb(30,126,121);
+}
+/* Footer CSS
+--------------------------- */
+footer {
+    margin: 0 auto;
+    padding: 10px;
+    width: 940px;
+    background: rgb(243,237,234);
+
+    /* Background color doesn't work because */
+    /* footer element itself has a height of 0 */
+    overflow: auto;
+}
+/* Copyright */
+footer p {
+    margin: 0;
+    padding: 10px;
+    font-size: 0.8em;
+    float: left;
+
+}
+/* Font awesome CSS
+--------------------------- */
+/* Style all font awesome icons */
+.fa {
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    float: right;
+}
+.fa:nth-child(odd) {
+    margin-right: 6px;
+}
+/* Add a hover effect if you want */
+/*.fa:hover {
+opacity: 0.6;
+}*/
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    background: rgb(7,10,10);
+    color: white;
+    padding: 2px 10px;
+    border-radius: 50%;
+}
+.fa-facebook:hover {
+    background: #3B5998;
+    color: white;
+}
+/* Twitter */
+.fa-twitter {
+    background: rgb(7,10,10);
+    color: white;
+    padding: 2px 5px;
+    border-radius: 50%;
+}
+.fa-twitter:hover {
+    background: #55ACEE;
+    color: white;
+}

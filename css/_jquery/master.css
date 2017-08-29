@@ -1,0 +1,201 @@
+/* All CSS
+--------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+}
+/* Root CSS
+--------------------------- */
+html {
+    margin: 0;
+    padding: 0;
+}
+/* Global CSS
+--------------------------- */
+body {
+    font-family: 'Saira', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+/* Header CSS
+--------------------------- */
+header {
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    width: 940px;
+}
+header h1 {
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+/* Navigation CSS
+--------------------------- */
+nav {
+    margin: 0;
+    padding: 0;
+    background: rgb(204,204,204);
+}
+nav a {
+    margin: 0;
+    padding: 0 88.4px;
+    /* a grid of boxes that fills the browser width and wraps nicely. */
+    display: inline-block;
+
+    text-transform: uppercase;
+    color: rgb(96,94,94);
+    font-weight: 100;
+}
+nav a:hover {
+    background: rgb(160,160,159);
+    color: white;
+}
+
+/* CSS unwanted spacing between anchor-tag elements */
+nav {
+    font-size: 0;
+} /* Dirty trick */
+nav a {
+    font-size: 16px;
+} /* Dirty trick */
+
+nav a:not(:last-child) {
+    /* Border is higher than anchor tag, fixed with display: inline-block; */
+    border-right: 1px solid rgb(160,160,159);
+}
+/* Logo CSS
+--------------------------- */
+.logo {
+    margin: 0 auto;
+    padding: 40px 0;
+    width: 940px;
+    background: rgb(49,121,203);
+    position: relative;
+}
+
+/* Head 2 */
+.logo h2 {
+    margin: 0;
+    /* Cause collapsi between logo and img 3 */
+    padding: 0;
+    margin-bottom: 0.2em;
+    font-weight: 100;
+    color: #fff;
+    width: 540px;
+    font-size: 48px;
+}
+/* GitHub */
+.logo a {
+    font-weight: 100;
+    border: 2px solid white;
+    text-align: center;
+}
+.logo a:hover {
+    background: rgb(232,251,242);
+    color: rgb(96,94,94);
+    border: 2px solid rgb(96,94,94);
+}
+
+/* Copied codes */
+a.button {
+    width: 202px;
+    height: 80px;
+    line-height: 1.2;
+    font-size: 23px;
+    color: #fff;
+    padding-left: 68px;
+    padding-top: 22px;
+}
+/* Separate into two lines */
+a.button small {
+    display: block;
+    font-size: 11px;
+}
+/* Position for .logo */
+header a.button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    /* Background img not working */
+    /*background: transparent url(../images/github-button.png) 0 0 no-repeat;*/
+}
+/* Main Content CSS
+--------------------------- */
+main {
+    margin: 0 auto;
+    padding: 0;
+    width: 940px;
+    /*border: 1px solid black;*/
+
+    /* Remove white space below footer */
+    /*min-height: calc(100vh - 300px);*/
+}
+/* Year 2017 section
+--------------------------- */
+.yr2017s {
+    margin: 0;
+    padding: 0;
+}
+/* yr2017 article */
+.yr2017 {
+    margin: 0;
+    padding: 0;
+    /* Clear the whitespace between images */
+    float: left;
+    /*clear: none;*/
+    /* display: inline-block; give whitespace*/
+    /*display: inline-block;*/
+
+}
+.yr2017:not(:nth-child(3n+3)) {
+    padding-right: 5px;
+}
+/*.yr2017:not(:last-child) {
+    padding-right: 5px;
+}*/
+
+.yr2017 h3, img {
+    width: 310px;
+}
+.yr2017 p {
+    width: 310px;
+    text-align: justify;
+}
+/* Footer CSS
+--------------------------- */
+footer {
+    margin: 0 auto;
+    padding: 0;
+    width: 940px;
+    text-align: center;
+
+    /*ensure the footer stays below main divs floats*/
+    clear: both;
+
+}
+footer p {
+    background: rgb(160,160,159);
+    text-align: center;
+}
+/* Remove white space below footer
+------------------------------- */
+
+/* Using a sticky footer */
+/*footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}*/
+/* Using a minimum-height for the main content */
+/*main {
+    min-height: calc(100vh - 300px);
+}*/
+
+/* Mobile CSS
+--------------------------- */

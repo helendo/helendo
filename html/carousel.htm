@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Basic Page Needs
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <!-- Responsive meta tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Carousel</title>
+    <!-- Favicon link -->
+    <link rel="icon" href="demo_icon.ico" type="image/gif" sizes="16x16">
+
+    <!-- Google Fonts
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,400,700,800" rel="stylesheet">
+
+    <!-- CSS links
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/_css/carousel_arrow.css">
+</head>
+<body>
+
+    <!-- Carousel -->
+    <div class="carousel-wrapper" style="height: 400px;">
+
+        <span id="target-item-1"></span>
+        <span id="target-item-2"></span>
+        <span id="target-item-3"></span>
+
+        <!-- Item 1 -->
+        <div class="carousel-item item-1 light" style="background: rgb(187,200,221) 50% 50% / cover;">
+            <h2>Item 1</h2>
+            <p>Content goes here.</p>
+            <a class="arrow arrow-prev" href="#target-item-3"></a>
+            <a class="arrow arrow-next" href="#target-item-2"></a>
+        </div> <!-- // Item 1 -->
+
+        <!-- Item 2 -->
+        <div class="carousel-item item-2 light" style="background-color: royalblue;">
+            <h2>Item 2</h2>
+            <p>Content goes here.</p>
+            <a class="arrow arrow-prev" href="#target-item-1"></a>
+            <a class="arrow arrow-next" href="#target-item-3"></a>
+        </div> <!-- // Item 2 -->
+
+        <!-- Item 3 -->
+        <div class="carousel-item item-3" style="background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.4)), url(/assets/img/css-carousel/harbor.jpg) 50% 50% / cover;">
+            <h2>Item 3</h2>
+            <p>Content goes here.</p>
+            <a class="arrow arrow-prev" href="#target-item-2"></a>
+            <a class="arrow arrow-next" href="#target-item-1"></a>
+        </div> <!-- // Item 3 -->
+        
+    </div> <!-- // Carousel -->
+
+</body>
+</html>
