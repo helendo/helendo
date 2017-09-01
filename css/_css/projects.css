@@ -1,0 +1,118 @@
+/* ------------------------------
+             PROJECTS
+------------------------------ */
+#projects {
+    /*.project-list*/
+}
+
+#projectControls {
+    margin-left: 5pt;
+    margin-bottom: 10pt;
+}
+
+#projects .imageheader {
+    background: -webkit-linear-gradient(top, transparent, transparent), url(../../images/backgrounds/css3.jpg);
+    background: linear-gradient(180deg, transparent, transparent), url(../../images/backgrounds/css3.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    max-height: auto
+}
+
+#projects .project-list {
+    list-style: none;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+}
+
+#projects .project-list .project-item {
+    position: relative;
+    color: #fff;
+    overflow: hidden;
+    width: 50%;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    opacity: .8;
+}
+
+#projects .project-list .project-item .project-name {
+    background: #d14348;
+    color: #f3d350;
+    font-weight: 700;
+    font-size: 80%;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: none;
+}
+
+#projects .project-list .project-item:focus .project-name,
+#projects .project-list .project-item:hover .project-name {
+    display: block;
+}
+
+#projects .project-list .project-item:focus,
+#projects .project-list .project-item:hover {
+    opacity: 1;
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+    z-index: 1;
+}
+
+#projects .project-list .project-item:focus .project-name,
+#projects .project-list .project-item:hover .project-name {
+    display: block;
+    -webkit-animation: a 1s;
+    animation: a 1s;
+}
+
+/* keyframes */
+@-webkit-keyframes a {
+    0% {
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+        visibility: visible
+    }
+    to {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0)
+    }
+}
+
+@keyframes a {
+    0% {
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+        visibility: visible
+    }
+    to {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0)
+    }
+}
+/* PROJECTS (Media Queries)
+------------------------------- */
+@media screen and (min-width:600px) {
+    #projects .project-list .project-item {
+        width: 33.33333%
+    }
+}
+
+@media screen and (min-width:900px) {
+    #projects .project-list .project-item {
+        width: 25%
+    }
+}
+
+@media screen and (min-width:1200px) {
+    #projects .project-list .project-item {
+        width: 16.66667%
+    }
+}
