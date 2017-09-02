@@ -1,315 +1,192 @@
-/* IMPORT brandon-grotesque FONT
------------------------------ */
-@font-face {
-    font-family: 'Brandon-grotesque';
-    src: url("../../fonts/Brandon_thin.otf");
-    font-weight: 100;
-}
-@font-face {
-    font-family: 'Brandon-grotesque';
-    src: url("../../fonts/Brandon_light.otf");
-    font-weight: 200;
-}
-@font-face {
-    font-family: 'Brandon-grotesque';
-    src: url("../../fonts/Brandon_light.otf");
-    font-weight: 300;
-}
-@font-face {
-    font-family: 'Brandon-grotesque';
-    src: url("../../fonts/Brandon_med.otf");
-    font-weight: 400;
-}
-
-
 /* ---------------------------
-NONE PADDING - MARGIN
+        RESET ALL TO 0
 --------------------------- */
 * {
     margin: 0;
     padding: 0;
 }
-/* Root CSS
---------------------------- */
-html {
-    margin: 0;
-    padding: 0;
-}
-
-
 /* ------------------------------
             GLOBAL CSS
 ------------------------------ */
+html {
+    box-sizing: border-box
+}
 body {
-    margin: 0;
-    padding: 0;
-
-    font-family: 'Brandon-grotesque';
-    font-size: 12px;
-    min-width: 960px;
-    color:rgba(255,255,255,0.6);
-
+    color: #000;
+    background-color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 300;
 }
 a {
-    -moz-transition:color 0.3s ease-out;
-    -webkit-transition:color 0.3s ease-out;
-    -o-transition:color 0.3s ease-out;
-    transition:color 0.3s ease-out;
+    text-decoration: none;
+    font-weight: 700;
+}
+p {
+    text-align: justify;
+    margin: 0 0 1rem 0;
+}
+li {
+    list-style: none;
+}
+img {
+    display: block;
+    max-width: 100%
+}
+em {
+    font-weight: 700;
+    font-size: 140%;
+    color: #f3d350;
+    font-style: normal
+}
+h1,h2,h3,h4,h5,h6 {
+    color: rgb(240,219,79);
 }
 
-
-/*h1 small {
-font: 0.2em normal  Arial, Helvetica, sans-serif;
-text-transform:uppercase; letter-spacing: 0.2em; line-height: 50px;
-display: block;
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
-
-h1 span {
-font-size:24px;
-font-weight:400;
-font-style:italic;
-text-transform:uppercase; letter-spacing: 0.2em; line-height: 30px;
-display: block;
-}
-
-
-h1 a {
-text-decoration:none;
-color:#00c6ff;
-font-style:italic;
-}*/
-
 
 /* -----------------------------
             HEADER
 ----------------------------- */
-header #top {
+header.site-header {
     /* General CSS */
-    background: #222;
-    height: 30px;
-    line-height: 30px;
-    width: 100%;
-
+    -webkit-box-align: center;
+    align-items: center;
+    overflow: hidden;
     /* Position CSS */
-    /*float: left;*/
+    display: -webkit-flex;
+    display: flex;
 }
-/* Navigation - HEADER MENU
---------------------------- */
-header nav#topmenu {
-    /* General CSS */
-
-    /* Center nav, will not work for nav with only a */
-    margin: 0 auto;
-    padding: 0 15px;
-    width: 960px
-
-    /* Position CSS */
-    /* Auto center nav will not work when add this property */
-    /*position: relative;*/
-
+/* Header Logo */
+img.header-logo {
+    padding: 0 16px;
+    width: 40px;
+    height: 40px;
 }
-header nav#topmenu ul {
-    margin: 0;
-    padding: 0;
+/* Header Title */
+a.header-title-link {
+    margin-right: auto;
+    font-size: 40px;
+    font-weight: 200;
+    color: rgb(0, 0, 0);
 }
-header nav#topmenu ul li {
-    /* General CSS */
-    margin: 0;
-    padding: 0;
-    font-size: 10px;
-    list-style: none;
-    text-align: center;
-    text-transform: uppercase;
-    border-right: 1px solid #ccc;
-    width: 90px;
-
-    /* Position CSS */
-    float: left;
-    position: relative;
+/* Header Social Media */
+a.social-media-link {
+    padding: 0 6px;
+    color: rgb(160,160,159);
 }
-header nav#topmenu ul li:first-child {
-    border-left: 1px solid #ccc;
+div.h-social-media a:hover {
+    color: rgb(155,218,239);
 }
-header nav#topmenu ul li a {
-    /* General CSS */
-    color: rgba(255, 255, 255, 0.6);
-    text-decoration: none;
-
-    /* Position CSS */
-    display: block;
-}
-header nav#topmenu ul li a:hover {
-    color: #fff;
-}
-header nav#topmenu ul li:hover > a {
-    color: #fff;
-}
-
-
-/*          ARROW
---------------------------- */
-header nav#topmenu ul li span {
-    /* General CSS */
-    background: url("../../images/arrow.png") center no-repeat;
-    text-indent: -9999px;
-    height: 10px;
-    width: 10px;
-
-    /* Position CSS */
-    position: absolute;
-    top: 10px;
-    right: 5px;
-}
-header nav#topmenu ul li span.arrow {
-    background-position: 0 2px;
-}
-header nav#topmenu ul li span.arrow-right {
-    background-position: -10px 2px;
-}
-
-
-/*         SUB LIST
----------------------------- */
-header nav#topmenu ul li ul.sublist {
-    /* General CSS */
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    background: #222;
-    opacity: 0;
-    visibility: hidden;
-    -moz-transition:opacity 0.2s 0.01s ease-in-out, left 0.2s 0.1s ease-out, visibility 0.1s 0.1s linear;
-    -webkit-transition:opacity 0.2s 0.01s ease-in-out, left 0.2s 0.1s ease-out, visibility 0.1s 0.1s linear;
-    -o-transition:opacity 0.2s 0.01s ease-in-out, left 0.2s 0.1s ease-out, visibility 0.1s 0.1s linear;
-    transition:opacity 0.2s 0.01s ease-in-out, left 0.2s 0.1s ease-out, visibility 0.1s 0.1s linear;
-
-    width: 90px;
-    /* Position CSS */
-    float: left;
-    position: absolute;
-    left: 0px;
-    top: 31px;
-}
-header nav#topmenu ul li ul.sublist li {
-    /* General CSS */
-    margin-top: -15px;
-    padding: 0;
-    border: none;
-    border-bottom: 1px solid #ccc;
-    clear: both;
-    -moz-transition:opacity 0.1s 0.15s ease-out, margin 0.3s 0.1s ease-out;
-    -webkit-transition:opacity 0.1s 0.15s ease-out, margin 0.3s 0.1s ease-out;
-    -o-transition:opacity 0.15s 0.15s ease-out, margin 0.3s 0.1s ease-out;
-    transition:opacity 0.15s 0.15s ease-out, margin 0.3s 0.1s ease-out;
-
-    width: 90px;
-}
-header nav#topmenu ul li ul.sublist li a {
-    color: rgba(255, 255, 255, 0);
-}
-/* Visible Sublist */
-header nav#topmenu ul li:hover ul.sublist {
-    opacity: 1;
-    visibility: visible;
-}
-header nav#topmenu ul li:hover ul.sublist li {
-    margin-top: 0;
-    opacity: 1;
-}
-/* Visible sub a */
-header nav#topmenu ul li:hover ul.sublist li a {
-    color:rgba(255, 255, 255, 0.6);
-    -moz-transition:color 0.1s ease-out;
-    -webkit-transition:color 0.1s ease-out;
-    -o-transition:color 0.1s ease-out;
-    transition:color 0.1s ease-out;
-}
-header nav#topmenu ul li:hover ul.sublist li a:hover {
-    color:rgba(255,255,255,1);
-    -moz-transition:color 0.3s ease-out;
-    -webkit-transition:color 0.3s ease-out;
-    -o-transition:color 0.3s ease-out;
-    transition:color 0.3s ease-out;
-}
-header nav#topmenu ul li:hover ul.sublist li:hover > a {
-    color:#fff;
-}
-/* SUB SUB LIST */
-header nav#topmenu ul li ul.sublist li ul.subsublist {
-    /* General CSS */
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    background: #222;
-    opacity: 0;
-    visibility: hidden;
-    -moz-transition:opacity 0.2s 0.01s ease-in-out, left 0.2s 0.1s ease-out, visibility 0.1s 0.1s linear;
-    -webkit-transition:opacity 0.2s 0.01s ease-in-out, left 0.2s 0.1s ease-out, visibility 0.1s 0.1s linear;
-    -o-transition:opacity 0.2s 0.01s ease-in-out, left 0.2s 0.1s ease-out, visibility 0.1s 0.1s linear;
-    transition:opacity 0.2s 0.01s ease-in-out, left 0.2s 0.1s ease-out, visibility 0.1s 0.1s linear;
-
-    width: 90px;
-    /* Position CSS */
-    float: left;
-    position: absolute;
-    top: 0px;
-    left: 61px;
-}
-header nav#topmenu ul li ul.sublist li ul.subsublist li {
-    margin: 0;
-    padding: 0;
-    border: none;
-    border-bottom: 1px solid #ccc;
-    clear: both;
-    opacity: 1;
-
-    width: 90px;
-}
-header nav#topmenu ul li ul.sublist li:hover ul.subsublist {
-    opacity: 1;
-    visibility: visible;
-    /* Position CSS */
-    left: 91px;
-}
-/* -------------------------------
-            MAIN CONTENT
+/* MOBILE HEADER (Media Queries)
 ------------------------------- */
-main {
-    margin: 0;
-    padding: 0;
-
-    background: url("../../images/img.jpg");
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    /*background-attachment: fixed;*/
-    background-position: center;
-
-    overflow: auto;
-    /*opacity: 0.9;*/
-
-    height: 100%;
-    width: 100%;
-
+@media all and (max-width: 640px) {
+    /* Header Logo */
+    div.h-logo {
+        padding: 0 8px;
+        width: 20px;
+        height: 20px;
+    }
+    a.h-title-link {
+        font-size: 20px;
+    }
+    /* Header Social Media */
+    a.social-media-link {
+        width: 25%;
+    }
 }
-.header h1 {
-    font-size:60px;
-    font-weight:400;
-    padding: 300px;	margin: 0;
-    text-align:center;
-    color:#333;
-    text-shadow:1px 1px 5px rgba(0,0,0,0.2);
+/* -----------------------------
+            NAVIGATION
+----------------------------- */
 
-}
-.header h2 {
-    font-size: 54px;
+/* -----------------------------
+            SECTION
+----------------------------- */
+.section .headline {
+    text-transform: uppercase;
     font-weight: 300;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    color: #333;
-    text-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+    font-size: 4rem;
+    margin-top: 3rem;
+    line-height: 110%
+}
+section#css3page-top {
+    background: rgb(29,161,242);
 
 }
+section#css3page-top h2 {
+    padding: 4rem;
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 600;
+    font-style: italic;
+}
+section#css3page-top p {
+    text-align: center;
+}
+section#css3page-top img {
+    margin: 0 auto;
+    width: 33.33333%;
+}
+/* CSS3 PAGE TOP (Media Queries)
+------------------------------- */
+@media screen and (max-width:600px) {
+    section#css3page-top h2 {
+        font-size: 3rem;
+    }
+}
+.flex-boxes {
+display: -webkit-box;
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+-webkit-flex-flow: row wrap;
+-ms-flex-flow: row wrap;
+flex-flow: row wrap;
+}
+.card-6 {
+    padding: 0 1%;
+    width: 48%;
+}
+
+header.icon-block {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+
+}
+.block-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.block-text h3 {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+.icon-block i {
+    font-size: 10rem;
+    color: rgb(29,161,242);
+}
+p {
+    font-size: 1rem;
+}
+section#css3-advantages {
+    background: rgb(243,247,252);
+}
+/* CSS3 ADVANTAGES (Media Queries)
+------------------------------- */
+@media screen and (max-width:900px) {
+    .card-6 {
+        width: 100%;
+    }
+}
+
+
+/* -----------------------------
+            FOOTER
+----------------------------- */

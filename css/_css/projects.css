@@ -2,22 +2,12 @@
              PROJECTS
 ------------------------------ */
 #projects {
-    /*.project-list*/
+    background: rgb(79,187,164);
 }
 
 #projectControls {
     margin-left: 5pt;
     margin-bottom: 10pt;
-}
-
-#projects .imageheader {
-    background: -webkit-linear-gradient(top, transparent, transparent), url(../../images/backgrounds/css3.jpg);
-    background: linear-gradient(180deg, transparent, transparent), url(../../images/backgrounds/css3.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    height: 100vh;
-    max-height: auto
 }
 
 #projects .project-list {

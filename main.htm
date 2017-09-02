@@ -21,20 +21,52 @@
 
 </head>
 <body>
-    <!-- HEADER -->
-    <header role="banner" class="flex-container site-header">
-        <div class="flex-item h-logo pulse"><a href="main.htm"><img src="001-application.svg" alt="icon-logo-resume"></a></div>
-        <div class="flex-item h-middle-area zoom-tilt"><a href="main.htm" class="h-logo-link">helendo.com</a></div>
-        <div class="flex-item h-social-media">
-            <a href="mailto:helennndo@gmail.com"><i class="fa fa-envelope-o shrink" aria-hidden="true"></i></a>
-            <a href="#"><i class="fa fa-twitter shrink" aria-hidden="true"></i><span class="sr-only">Twitter</span></a>
-            <a href="#"><i class="fa fa-linkedin shrink" aria-hidden="true"></i><span class="sr-only">LinkedIn</span></a>
+    <!-- HEADER --><!-- flex boxes start here -->
+    <header role="banner" class="site-header flex-container">
+        <div class="h-logo flex-item"><a href="main.htm"><img src="images/001-girl.svg" alt="icon-logo-resume"></a></div>
+        <div class="h-title flex-item"><a href="main.htm" class="h-title-link">helendo.com</a></div>
+        <div class="h-social-media flex-item">
+            <a href="mailto:helennndo@gmail.com" class="social-media-link"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+            <a href="#" class="social-media-link"><i class="fa fa-twitter" aria-hidden="true"></i><span class="sr-only">Twitter</span></a>
+            <a href="#" class="social-media-link"><i class="fa fa-linkedin" aria-hidden="true"></i><span class="sr-only">LinkedIn</span></a>
         </div>
-    </header><!-- // HEADER -->
+    </header><!-- flex boxes end here --><!-- // HEADER -->
 
-    <!-- ALL SITE WRAP -->
+    <!-- TOP NAVIGATION -->
+    <nav role="navigation" class="top-nav">
+        <ul class="nav-list">
+            <li class="nav-item"><a href="#" class="top-nav-link">HOME</a></li>
+            <li class="nav-item"><a href="#" class="top-nav-link">HTML</a>
+                <ul class="nav-submenu">
+                    <li class="nav-submenu-item"><a href="#">HTML</a></li>
+                    <li class="nav-submenu-item"><a href="#">HTML5</a></li>
+                </ul>
+            </li>
+            <li class="nav-item"><a href="#" class="top-nav-link">CSS</a>
+                <ul class="nav-submenu">
+                    <li class="nav-submenu-item"><a href="css_page/index.htm">CSS</a></li>
+                    <li class="nav-submenu-item"><a href="css3_page/index.htm">CSS3</a></li>
+                </ul>
+            </li>
+            <li class="nav-item"><a href="#" class="top-nav-link">JAVASCRIPT</a></li>
+            <li class="nav-item"><a href="#" class="top-nav-link">JQUERY</a></li>
+            <li class="nav-item"><a href="#" class="top-nav-link">BOOTSTRAP</a></li>
+            <li class="nav-item"><a href="#" class="top-nav-link">SQL</a></li>
+            <li class="nav-item"><a href="#" class="top-nav-link">XML</a></li>
+            <li class="nav-item"><a href="#" class="top-nav-link">AJAX</a></li>
+            <li class="nav-item"><a href="#" class="top-nav-link">JSON</a></li>
+            <li class="nav-item"><a href="#" class="top-nav-link">PHP</a></li>
+            <li class="nav-item"><a href="#" class="top-nav-link">PYTHON</a></li>
+            <li class="nav-item"><a href="#" class="top-nav-link">RUBY ON RAILS</a></li>
+            <li class="nav-item"><a href="#" class="top-nav-link">JAVA</a></li>
+            <li class="nav-item"><a href="#" class="top-nav-link">WORDPRESS</a></li>
+        </ul>
+    </nav><!-- // TOP NAVIGATION -->
+
+
+    <!-- All Site Wrap -->
     <div class="all-site-wrap">
-        <!-- NAVIGATION -->
+        <!-- MAIN NAVIGATION -->
         <nav role="navigation" class="main-nav" id="main-nav">
             <ul>
                 <li class="home current shrink">
@@ -86,87 +118,28 @@
                     </a>
                 </li>
             </ul>
-        </nav><!-- // NAVIGATION -->
+        </nav><!-- // MAIN NAVIGATION -->
 
 
         <!-- MAIN -->
         <main role="main">
-            <article role="article" class="article-card module module-article article">
-                    <div class="module-content">
-                        <header class="article-card-header">
-                            <div class="article-card-title">
-                                <h2>
-                                    <a href="#" class="article-card-header read-article">About This Website</a>
-                                </h2>
-                            </div>
-                            <div class="byline">
-                                <a href="#"><time datetime="2017-08-25">August 25, 2017</time></a>
-                                <span class="author">By <a href="#"><span class="p-author">Helen Do</span></a></span>
-                            </div>
-                        </header>
+            <!-- About Page -->
+            <article role="article">
+                <!-- flex boxes start here -->
+                <div class="module-content about flex-container">
+                    <img src="images/redd-angelo-229312.jpg" alt="Profile Picture" class="profile flex-item">
+                    <div class="main-content flex-item">
+                        <h2 class="author">Helen Do</h2>
                         <div class="text-block">
                             <p>I have been trying to get a job as a <strong>front-end web developer</strong>.</p>
                             <p>By creating and developing this website, I have been learned and practiced a lot and I think I have learned enough to get a job as an junior front end web developer.</p>
-                            <p>My resume is included in this website. Also, I have posted my daily blog and many <i>HTML5, CSS/CSS3, JavaScript and jQuery</i> demos or projects. Not only that, I have many web templates I create for fun that everyone can download and use them without worrying about copyright. Feel free to copy and use my codes.</p>
-                            <p>This website is an open source! But If you use my codes, I am very thankful if you give me credits for what I have created.</p>
+                            <p>My <strong><em>resume</em></strong> is included in this website. Also, I have posted my daily blog and many <strong><i>HTML5, CSS/CSS3, JavaScript and jQuery</i></strong> demos or projects. Not only that, I create templates for fun, feel free to copy and use my codes.</p>
                         </div>
                     </div>
-            </article>
-            <article role="article" class="article-card module module-article article" id="videos">
-                    <div class="module-content">
-                        <header class="article-card-header">
-                            <div class="article-card-title">
-                                <h2>
-                                    <a href="#" class="article-card-header read-article">Videos</a>
-                                </h2>
-                            </div>
-                            <div class="byline">
-                                <a href="#"><time datetime="2017-08-25">August 25, 2017</time></a>
-                                <span class="author">By <a href="#"><span class="p-author">Helen Do</span></a></span>
-                            </div>
-                        </header>
-                        <div class="text-block">
-
-                        </div>
-                    </div>
-            </article>
-            <article role="article" class="article-card module module-article article">
-                    <div class="module-content">
-                        <header class="article-card-header">
-                            <div class="article-card-title">
-                                <h2>
-                                    <a href="#" class="article-card-header read-article">Gallery</a>
-                                </h2>
-                            </div>
-                            <div class="byline">
-                                <a href="#"><time datetime="2017-08-25">August 25, 2017</time></a>
-                                <span class="author">By <a href="#"><span class="p-author">Helen Do</span></a></span>
-                            </div>
-                        </header>
-                        <div class="text-block">
-
-                        </div>
-                    </div>
-            </article>
-            <article role="article" class="article-card module module-article article" id="snippets">
-                    <div class="module-content">
-                        <header class="article-card-header">
-                            <div class="article-card-title">
-                                <h2>
-                                    <a href="#" class="article-card-header read-article">Snippets</a>
-                                </h2>
-                            </div>
-                            <div class="byline">
-                                <a href="#"><time datetime="2017-08-25">August 25, 2017</time></a>
-                                <span class="author">By <a href="#"><span class="p-author">Helen Do</span></a></span>
-                            </div>
-                        </header>
-                        <div class="text-block">
-
-                        </div>
-                    </div>
-            </article>
+                </div><!-- flex boxes end here -->
+            </article><!-- // About Page -->
         </main><!-- // MAIN -->
+    </div><!-- // All Site Wrap -->
 
 
 
@@ -175,10 +148,10 @@
 
 
 
-
-        <!-- jQuery Google CDN -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <!-- JS links -->
-        <script type="text/javascript" src="js/main.js"></script>
-    </body>
-    </html>
+    <!-- jQuery Google CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- JS links -->
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/flaunt.js"></script>
+</body>
+</html>
